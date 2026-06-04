@@ -1,0 +1,44 @@
+UIWindow
+  id: npcDialogWindow
+  size: 350 200
+  anchors.centerIn: parent
+  image-source: /images/ui/panel_flat
+  &save: false
+  visible: false
+
+  Label
+    id: npcName
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    text-align: center
+    margin-top: 5
+    font: verdana-11px-monochrome
+    text: Nome do NPC
+    color: #ffff00
+
+  Label
+    id: npcMessage
+    anchors.top: npcName.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottom: optionsPanel.top
+    margin-top: 15
+    margin-left: 15
+    margin-right: 15
+    margin-bottom: 5
+    text-wrap: true
+    text-align: topleft
+
+  ScrollablePanel
+    id: optionsPanel
+    anchors.bottom: parent.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    margin-bottom: 10
+    margin-left: 15
+    margin-right: 15
+    height: 70
+    layout:
+      type: verticalBox
+      spacing: 3

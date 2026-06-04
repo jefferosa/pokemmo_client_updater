@@ -1,0 +1,65 @@
+Addon < UICreature
+  size: 64 64
+  anchors.top: parent.top
+  anchors.left: parent.left
+
+  $hover:
+    opacity: 0.5
+
+  $!hover:
+    opacity: 1.0
+
+TMSlot < UIButton
+  width: 32
+  height: 32
+  focusable: false
+  image-size: 38 38
+  anchors.left: parent.left
+  anchors.top: parent.top
+  
+  $hover:
+    opacity: 0.5
+  $!hover:
+    opacity: 1.0
+
+  Label
+    id: tmslot
+    !text: tr('')
+    anchors.left: parent.left
+    anchors.top: parent.top
+    width: 85
+
+UIWindow
+  id: addonsystem
+  size: 600 400
+  anchors.verticalCenter: parent.verticalCenter
+  anchors.horizontalCenter: parent.horizontalCenter
+  &save: true
+  @onEnter: hide()
+  @onEscape: hide()
+  image-source: interface/panel.png
+
+  Label
+    id: minitext
+    !text: tr('Addons do seu Pokemon')
+    anchors.left: parent.left
+    anchors.top: parent.top
+    margin-top: 9
+    margin-left: 13
+    width: 500
+
+  UIButton
+    id: closebutton
+    size: 20 20
+    image-source: interface/closebutton.png
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 7
+    margin-right: 15
+    @onClick: modules.addonsystem.hide()
+
+    $hover:
+      opacity: 0.5
+
+    $!hover:
+      opacity: 1.0

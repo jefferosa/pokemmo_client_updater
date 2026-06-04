@@ -1,0 +1,58 @@
+UIWindow
+  id: newPokemon
+  image-source: interface/newpoke1.png
+  size: 302 220
+  anchors.verticalCenter: parent.verticalCenter
+  anchors.horizontalCenter: parent.horizontalCenter
+  &save: true
+  @onEnter: hide()
+  @onEscape: hide()
+
+  UIButton
+    id: closebutton
+    size: 32 32
+    image-source: interface/closebutton.png
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 6
+    margin-right: 6
+    @onClick: modules.NewPokemon.hide()
+
+    $hover:
+      opacity: 1.0
+
+    $pressed:
+      opacity: 1.0
+
+  UIButton
+    id: squirtle
+    size: 125 125
+    image-source: interface/squirtle.png
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-top: 98
+    margin-left: 7
+    !tooltip: tr('Squirtle, um pokemon do tipo agua com alta defesa e vida.')
+    @onClick: modules.NewPokemon.firstpoke('Squirtle')
+
+  UIButton
+    id: charmander
+    size: 125 125
+    image-source: interface/charmander.png
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-top: 98
+    margin-left: 90
+    !tooltip: tr('Charmander, um pokemon do tipo fogo com grande dano em area.')
+    @onClick: modules.NewPokemon.firstpoke('Charmander')
+
+  UIButton
+    id: bulbasaur
+    size: 125 125
+    image-source: interface/bulbasaur.png
+    anchors.top: parent.top
+    anchors.left: parent.left
+    margin-top: 103
+    margin-left: 168
+    !tooltip: tr('Bulbasaur, um pokemon do tipo planta com dano e defesa equilibrados.')
+    @onClick: modules.NewPokemon.firstpoke('Bulbasaur')

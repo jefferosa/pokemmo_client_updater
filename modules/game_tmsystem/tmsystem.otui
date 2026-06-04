@@ -1,0 +1,85 @@
+TMButton < UIButton
+  width: 32
+  height: 32
+  focusable: false
+  image-size: 32 32
+  anchors.left: parent.left
+  anchors.top: parent.top
+
+  $hover:
+    opacity: 0.5
+
+  $!hover:
+    opacity: 1.0
+
+TMSlot < UIButton
+  width: 32
+  height: 32
+  focusable: false
+  image-size: 38 38
+  anchors.left: parent.left
+  anchors.top: parent.top
+  
+  $hover:
+    opacity: 0.5
+  $!hover:
+    opacity: 1.0
+
+  Label
+    id: tmslot
+    !text: tr('')
+    anchors.left: parent.left
+    anchors.top: parent.top
+    width: 85
+
+UIWindow
+  id: tmsystem
+  size: 600 400
+  anchors.verticalCenter: parent.verticalCenter
+  anchors.horizontalCenter: parent.horizontalCenter
+  &save: true
+  @onEnter: hide()
+  @onEscape: hide()
+  image-source: interface/panel.png
+
+  Label
+    id: minitext
+    !text: tr('TM System')
+    anchors.left: parent.left
+    anchors.top: parent.top
+    margin-top: 10
+    margin-left: 35
+    width: 500
+
+  UIButton
+    id: returnbutton
+    size: 16 16
+    image-source: interface/returnbutton.png
+    anchors.top: parent.top
+    anchors.left: parent.left
+    image-size: 16 16
+    !tooltip: tr("Voltar")
+    margin-top: 10
+    margin-left: 13
+
+    $hover:
+      opacity: 0.5
+
+    $!hover:
+      opacity: 1.0
+
+  UIButton
+    id: closebutton
+    size: 16 16
+    image-source: interface/closebutton.png
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 10
+    margin-right: 13
+    @onClick: modules.tmsystem.hide()
+
+    $hover:
+      opacity: 0.5
+
+    $!hover:
+      opacity: 1.0

@@ -1,0 +1,56 @@
+FuncButton < UIButton
+  anchors.top: parent.top
+  anchors.left: parent.left
+
+  $hover:
+    opacity: 0.5
+  $!hover:
+    opacity: 1.0
+
+  Label
+    id: textdesc
+    !text: tr('')
+    anchors.left: parent.left
+    anchors.top: parent.top
+    width: 85
+
+TextUI < UILabel
+  size: 12 12
+  fixed-size: true
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left: 2
+  font: terminus-10px
+
+UIWindow
+  id: computersystem
+  size: 400 400
+  anchors.verticalCenter: parent.verticalCenter
+  anchors.horizontalCenter: parent.horizontalCenter
+  &save: true
+  @onEnter: hide()
+  @onEscape: hide()
+  image-source: interface/panel.png
+
+  FlatPanel
+    id: miniwindow
+    visible: false
+    anchors.top: parent.top
+    anchors.left: parent.left
+    image-source: interface/miniwindow.png
+
+  UIButton
+    id: closebutton
+    size: 16 16
+    image-source: interface/closebutton.png
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 10
+    margin-right: 8
+    @onClick: modules.computersystem.hide()
+
+    $hover:
+      opacity: 0.5
+
+    $!hover:
+      opacity: 1.0

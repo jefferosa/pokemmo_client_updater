@@ -1,0 +1,18 @@
+UIWindow
+  id: tmsystem
+  size: 360 540
+  anchors.verticalCenter: parent.verticalCenter
+  anchors.horizontalCenter: parent.horizontalCenter
+  &save: true
+  @onEnter: hide()
+  @onEscape: hide()
+  image-source: interface/panel.png
+
+DungeonButton < UIButton
+  anchors.left: parent.left
+  anchors.top: parent.top
+
+  $hover:
+    opacity: 0.5
+  $!hover:
+    opacity: 1.0

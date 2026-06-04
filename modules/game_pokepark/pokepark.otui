@@ -1,0 +1,73 @@
+TMButton < UIButton
+  width: 32
+  height: 32
+  focusable: false
+  image-size: 32 32
+  anchors.left: parent.left
+  anchors.top: parent.top
+
+  $hover:
+    opacity: 0.5
+
+  $!hover:
+    opacity: 1.0
+
+TextUI < UILabel
+  size: 12 12
+  fixed-size: true
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left: 2
+  font: terminus-10px
+
+UIWindow
+  id: pokepark
+  size: 600 400
+  anchors.verticalCenter: parent.verticalCenter
+  anchors.horizontalCenter: parent.horizontalCenter
+  &save: true
+  @onEnter: hide()
+  @onEscape: hide()
+  image-source: interface/panel.png
+
+  Label
+    id: minitext
+    !text: tr('PokePARK Shop')
+    anchors.left: parent.left
+    anchors.top: parent.top
+    margin-top: 9
+    margin-left: 35
+    width: 500
+
+  UIButton
+    id: returnbutton
+    size: 20 20
+    image-source: interface/returnbutton.png
+    anchors.top: parent.top
+    anchors.left: parent.left
+    image-size: 20 20
+    !tooltip: tr("Voltar")
+    margin-top: 7
+    margin-left: 15
+
+    $hover:
+      opacity: 0.5
+
+    $!hover:
+      opacity: 1.0
+
+  UIButton
+    id: closebutton
+    size: 20 20
+    image-source: interface/closebutton.png
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 7
+    margin-right: 15
+    @onClick: modules.pokepark.hide()
+
+    $hover:
+      opacity: 0.5
+
+    $!hover:
+      opacity: 1.0

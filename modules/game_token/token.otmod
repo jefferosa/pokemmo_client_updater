@@ -1,0 +1,13 @@
+Module
+  name: token
+  description: Choose your new pokemon.
+  author: Helena
+  website: twitter.com/owatarizayon
+
+  autoload: true
+  autoload-priority: 1000
+
+  scripts: [ token ]
+  sandboxed: true
+  @onLoad: init()
+  @onUnload: terminate()

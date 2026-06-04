@@ -1,0 +1,95 @@
+TMButton < UIButton
+  width: 32
+  height: 32
+  focusable: false
+  image-size: 32 32
+  anchors.left: parent.left
+  anchors.top: parent.top
+
+  $hover:
+    opacity: 0.5
+
+  $!hover:
+    opacity: 1.0
+
+TMSlot < UIButton
+  width: 32
+  height: 32
+  focusable: false
+  image-size: 38 38
+  anchors.left: parent.left
+  anchors.top: parent.top
+  
+  $hover:
+    opacity: 0.5
+  $!hover:
+    opacity: 1.0
+
+  Label
+    id: tmslot
+    !text: tr('')
+    anchors.left: parent.left
+    anchors.top: parent.top
+    width: 85
+
+TextUI < UILabel
+  size: 64 64
+  fixed-size: true
+  anchors.top: parent.top
+  anchors.left: parent.left
+  margin-left: 2
+  font: terminus-10px
+
+UIWindow
+  id: evsystem
+  size: 600 400
+  anchors.verticalCenter: parent.verticalCenter
+  anchors.horizontalCenter: parent.horizontalCenter
+  &save: true
+  @onEnter: hide()
+  @onEscape: hide()
+  image-source: interface/panel.png
+
+  Label
+    id: minitext
+    !text: tr('EV System')
+    anchors.left: parent.left
+    anchors.top: parent.top
+    margin-top: 7
+    margin-left: 10
+    width: 500
+    height: 50
+    font: sans-bold-16px
+
+  UIButton
+    id: returnbutton
+    size: 20 20
+    image-source: interface/returnbutton.png
+    anchors.top: parent.top
+    anchors.left: parent.left
+    image-size: 20 20
+    !tooltip: tr("Voltar")
+    margin-top: 7
+    margin-left: 15
+
+    $hover:
+      opacity: 0.5
+
+    $!hover:
+      opacity: 1.0
+
+  UIButton
+    id: closebutton
+    size: 20 20
+    image-source: interface/closebutton.png
+    anchors.top: parent.top
+    anchors.right: parent.right
+    margin-top: 7
+    margin-right: 10
+    @onClick: modules.evsystem.hide()
+
+    $hover:
+      opacity: 0.5
+
+    $!hover:
+      opacity: 1.0

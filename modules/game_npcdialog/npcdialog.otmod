@@ -1,0 +1,12 @@
+Module
+  name: game_npcdialog
+  description: Janela de Dialogo com NPCs
+  author: RosaTec
+  website: none
+  sandboxed: true
+  scripts: [ npcdialog ]
+  @onLoad: init()
+  @onUnload: terminate()
+  dependencies: [ game_interface ]
+  autoload: true
+  autoload-priority: 1000

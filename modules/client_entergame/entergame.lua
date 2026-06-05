@@ -9,7 +9,7 @@ local enterGameButton
 local clientBox
 local protocolLogin
 local motdEnabled = false
-local serverIp = '192.168.1.24'
+local serverIp = 'pokemmo.zapto.org'
 
 -- private functions
 local function onError(protocol, message, errorCode)

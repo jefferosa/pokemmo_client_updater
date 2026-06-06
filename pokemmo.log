@@ -152,3 +152,157 @@ stack traceback:
 	[C]: in function '__index'
 	/client_terminal/terminal.lua:200: in function 'terminate'
 	/client_terminal/terminal.otmod:9:[@onUnload]:1: in main chunk
+== application started at Jun 05 2026 20:35:36
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+ERROR: Unable to load texture '/images/topbuttons/miniwindowicon/minimap': unable to open file '/images/topbuttons/miniwindowicon/minimap.png': O sistema não pode encontrar o caminho especificado.
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+ERROR: Unable to unload module 'store_module': LUA ERROR:
+/gamelib/protocolgame.lua:43: Opcode is already taken.
+stack traceback:
+	[C]: at 0x0094d1d0
+	[C]: in function 'error'
+	/gamelib/protocolgame.lua:43: in function 'registerExtendedOpcode'
+	/store_module/store_module.lua:151: in function 'terminate'
+	/store_module/store_module.otmod:10:[@onUnload]:1: in main chunk
+ERROR: Unable to unload module 'bossnpc': LUA ERROR:
+/rc_sound/rcsound.lua:157: attempt to index a nil value
+stack traceback:
+	[C]: in function '__index'
+	/rc_sound/rcsound.lua:157: in function 'setLabel'
+	/rc_sound/rcsound.lua:151: in function 'stopSound'
+	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
+	/rc_sound/rcsound.lua:71: in function 'terminate'
+	/game_bossnpc/bossnpc.otmod:13:[@onUnload]:1: in main chunk
+ERROR: Unable to unload module 'token': LUA ERROR:
+/rc_sound/rcsound.lua:157: attempt to index a nil value
+stack traceback:
+	[C]: in function '__index'
+	/rc_sound/rcsound.lua:157: in function 'setLabel'
+	/rc_sound/rcsound.lua:151: in function 'stopSound'
+	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
+	/rc_sound/rcsound.lua:71: in function 'terminate'
+	/game_token/token.otmod:13:[@onUnload]:1: in main chunk
+ERROR: Unable to unload module 'addonsystem': LUA ERROR:
+/rc_sound/rcsound.lua:157: attempt to index a nil value
+stack traceback:
+	[C]: in function '__index'
+	/rc_sound/rcsound.lua:157: in function 'setLabel'
+	/rc_sound/rcsound.lua:151: in function 'stopSound'
+	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
+	/rc_sound/rcsound.lua:71: in function 'terminate'
+	/game_addonsystem/addonsystem.otmod:13:[@onUnload]:1: in main chunk
+ERROR: Unable to unload module 'rc_sound': LUA ERROR:
+/rc_sound/rcsound.lua:157: attempt to index a nil value
+stack traceback:
+	[C]: in function '__index'
+	/rc_sound/rcsound.lua:157: in function 'setLabel'
+	/rc_sound/rcsound.lua:151: in function 'stopSound'
+	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
+	/rc_sound/rcsound.lua:71: in function 'terminate'
+	/rc_sound/rcsound.otmod:13:[@onUnload]:1: in main chunk
+ERROR: Unable to unload module 'evsystem': LUA ERROR:
+/rc_sound/rcsound.lua:157: attempt to index a nil value
+stack traceback:
+	[C]: in function '__index'
+	/rc_sound/rcsound.lua:157: in function 'setLabel'
+	/rc_sound/rcsound.lua:151: in function 'stopSound'
+	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
+	/rc_sound/rcsound.lua:71: in function 'terminate'
+	/game_evsystem/evsystem.otmod:13:[@onUnload]:1: in main chunk
+ERROR: Unable to unload module 'tmsystem': LUA ERROR:
+/rc_sound/rcsound.lua:157: attempt to index a nil value
+stack traceback:
+	[C]: in function '__index'
+	/rc_sound/rcsound.lua:157: in function 'setLabel'
+	/rc_sound/rcsound.lua:151: in function 'stopSound'
+	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
+	/rc_sound/rcsound.lua:71: in function 'terminate'
+	/game_tmsystem/tmsystem.otmod:13:[@onUnload]:1: in main chunk
+ERROR: Unable to unload module 'dungeonsystem': LUA ERROR:
+/rc_sound/rcsound.lua:157: attempt to index a nil value
+stack traceback:
+	[C]: in function '__index'
+	/rc_sound/rcsound.lua:157: in function 'setLabel'
+	/rc_sound/rcsound.lua:151: in function 'stopSound'
+	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
+	/rc_sound/rcsound.lua:71: in function 'terminate'
+	/game_dungeon/dungeonsystem.otmod:13:[@onUnload]:1: in main chunk
+ERROR: Unable to unload module 'NewPokemon': LUA ERROR:
+/rc_sound/rcsound.lua:157: attempt to index a nil value
+stack traceback:
+	[C]: in function '__index'
+	/rc_sound/rcsound.lua:157: in function 'setLabel'
+	/rc_sound/rcsound.lua:151: in function 'stopSound'
+	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
+	/rc_sound/rcsound.lua:71: in function 'terminate'
+	/game_newpoke/newPokemon.otmod:13:[@onUnload]:1: in main chunk
+ERROR: Unable to unload module 'computersystem': LUA ERROR:
+/rc_sound/rcsound.lua:157: attempt to index a nil value
+stack traceback:
+	[C]: in function '__index'
+	/rc_sound/rcsound.lua:157: in function 'setLabel'
+	/rc_sound/rcsound.lua:151: in function 'stopSound'
+	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
+	/rc_sound/rcsound.lua:71: in function 'terminate'
+	/game_computersystem/computersystem.otmod:13:[@onUnload]:1: in main chunk
+ERROR: Unable to unload module 'client_terminal': LUA ERROR:
+/client_terminal/terminal.lua:200: attempt to index upvalue 'terminalButton' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/client_terminal/terminal.lua:200: in function 'terminate'
+	/client_terminal/terminal.otmod:9:[@onUnload]:1: in main chunk

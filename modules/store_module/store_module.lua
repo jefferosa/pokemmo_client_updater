@@ -35,10 +35,12 @@ function init()
 
   storeWindow = g_ui.displayUI('store_module')
   storeWindow:hide()
+  
   shopButton = modules.client_topmenu.addRightGameToggleButton('shopButton', tr('Loja'), '/images/topbuttons/emerald_shop', toggle, true)
   shopButton:setOn(true)
-  -- g_keyboard.bindKeyPress('Ctrl+U', toggle)
-  ProtocolGame.registerExtendedOpcode(54, coinsBalance)
+  
+  -- Verificação simples para não duplicar
+  pcall(function() ProtocolGame.registerExtendedOpcode(54, coinsBalance) end)
   
   transferPointsWindow = g_ui.displayUI('transferpoints')
   
@@ -148,13 +150,18 @@ end
 function terminate()
   storeWindow:hide()
   g_keyboard.unbindKeyPress('Ctrl+U')
-  ProtocolGame.registerExtendedOpcode(54, coinsBalance)
+  
+  -- CORREÇÃO: Mude de register para unregister
+  ProtocolGame.unregisterExtendedOpcode(54) 
   
   disconnect(g_game, {
     onGameStart = refresh,
     onGameEnd = offline
   })
-shopButton:destroy()
+  
+  if shopButton then
+    shopButton:destroy()
+  end
 end
 
 function coinsBalance(protocol, opcode, buffer)

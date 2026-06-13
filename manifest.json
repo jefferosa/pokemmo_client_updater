@@ -1,5 +1,5 @@
 {
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Files": [
     {
       "Path": "glew32.dll",
@@ -43,8 +43,8 @@
     },
     {
       "Path": "manifest.json",
-      "Hash": "97B6ACACB641096BBD287D194A4436A350C456551C54EC369DC079A9CA4B0530",
-      "Size": 911862
+      "Hash": "AAA7F55A0FFC61A8D0C319E0C0C9549DAB300E6A8D5558D93F47DBB9EA5D99FB",
+      "Size": 439460
     },
     {
       "Path": "OpenAL32.dll",
@@ -63,8 +63,8 @@
     },
     {
       "Path": "pokemmo.log",
-      "Hash": "3C91B6E6ECED82DBEB4FA03841EC834219F272614105237FE4A511B10008304A",
-      "Size": 19980
+      "Hash": "83EC16F10D614E6D23F0E08D2643C18E796F0BF962997CF31688E7E36450105C",
+      "Size": 124629
     },
     {
       "Path": "zlib.dll",
@@ -508,18 +508,18 @@
     },
     {
       "Path": "modules/client_entergame/characterlist.lua",
-      "Hash": "C0C03DCF8623AF413BDC557E903D3400F502FE7689CD39777BA94ECBBD5E5765",
-      "Size": 10215
+      "Hash": "20EA2B4A606D73C016EF9808CDA54D54F3E47FECEAFAACB2E468E1A629B8DA8E",
+      "Size": 10578
     },
     {
       "Path": "modules/client_entergame/characterlist.otui",
-      "Hash": "DFE16024F5971ED611FE7AB0588B53DD5AA75BA1602F7E62BAD7EE5F94583C97",
-      "Size": 3250
+      "Hash": "F63B033D34A5F424F91553BA0E48D7D6D1405E0DA0BDCC7E33E94B6F9212D264",
+      "Size": 3384
     },
     {
       "Path": "modules/client_entergame/entergame.lua",
-      "Hash": "DB77D9B612DB4A79F628982A01AC22957320688B86FE93E55434EBB483AC9597",
-      "Size": 13445
+      "Hash": "6235407012D7CC5FBB5097402E358CA279BEAB44B7C8A2E69C03A71057A03771",
+      "Size": 10980
     },
     {
       "Path": "modules/client_entergame/entergame.otmod",
@@ -528,8 +528,8 @@
     },
     {
       "Path": "modules/client_entergame/entergame.otui",
-      "Hash": "72B4A9D189F2532A89D2625BFBE9BC7B8E479BEDB46D2FDF66DEF4E63BA41F07",
-      "Size": 4554
+      "Hash": "67A1E5430B4921E11905D4242E5E275CA111FAA0005B53B8079976CA4CB0F551",
+      "Size": 3827
     },
     {
       "Path": "modules/client_entergame/waitinglist.otui",
@@ -643,8 +643,8 @@
     },
     {
       "Path": "modules/client_terminal/terminal.lua",
-      "Hash": "EA32A20C1090EBFE8796C5701A9617CBA9D9A28A6E4D418B5BD7402C6112F88F",
-      "Size": 10805
+      "Hash": "27A1836F7E4B31518AA2FDA77A69493D35E27DE9DAB3472F3A73CEE11C485ACE",
+      "Size": 10895
     },
     {
       "Path": "modules/client_terminal/terminal.otmod",
@@ -1073,18 +1073,18 @@
     },
     {
       "Path": "modules/game_inventory/inventory.lua",
-      "Hash": "750CEDE6CFEFAEAEAA0104D11C7E120CCB0F124A9C1C2C9A1E7C7EECCE56EAAF",
-      "Size": 3526
+      "Hash": "704C4B53E674892C6A08F668A6209FA1A36A5340E188136D128AC3A397DFDD0E",
+      "Size": 3653
     },
     {
       "Path": "modules/game_inventory/inventory.otmod",
-      "Hash": "D422DEE0A81A4B5CB231BDD43254B18A57CFA4FA7FB6A3150F6DAF4360520F7B",
-      "Size": 247
+      "Hash": "59E3A8FD3059E4E3AAD9D596CFA5C8EE3332A0E80F90468B6676066532DF45B9",
+      "Size": 256
     },
     {
       "Path": "modules/game_inventory/inventory.otui",
-      "Hash": "302A1B05CC67C54E5E0B91F83AB81D7EB6856D8EA007587BA0A739F0814E6223",
-      "Size": 3939
+      "Hash": "320350FC8A7FFB67EAB68EF1C11DCCDFF69964A726B762C0D47B9D370A4D8C2A",
+      "Size": 4105
     },
     {
       "Path": "modules/game_market/market.lua",
@@ -1138,8 +1138,8 @@
     },
     {
       "Path": "modules/game_minimap/minimap.otui",
-      "Hash": "AEF64FEC06A56A70FD696B48EB3D41BB03A254B42FB2F6ADF7D6F8798BDB09A6",
-      "Size": 875
+      "Hash": "F8C32DB02617D690ECB04CFA1CDFA8A0385C04D60F9690CA440483FC885DB91B",
+      "Size": 860
     },
     {
       "Path": "modules/game_modaldialog/modaldialog.lua",
@@ -1503,8 +1503,8 @@
     },
     {
       "Path": "modules/rc_sound/rcsound.lua",
-      "Hash": "A70AFD8BC8DE781BF20134FFFA4DCE4FC44B0CBD1436D83CD4879030AC26247C",
-      "Size": 4284
+      "Hash": "124A711C401D63487A3AB6F5E8FA8B1586B3EBEE158495207408C06019A95C7F",
+      "Size": 4698
     },
     {
       "Path": "modules/rc_sound/rcsound.otmod",
@@ -1523,8 +1523,8 @@
     },
     {
       "Path": "modules/store_module/store_module.lua",
-      "Hash": "82D255B591FB22BC54A674379A197ABB107087094FE9C6ABF4B516EC65D5DEB2",
-      "Size": 11258
+      "Hash": "2D45A432C0001AB8732C29FB9C9FDB469419F4D13FBD7F152BE0B77C8515ACD8",
+      "Size": 11368
     },
     {
       "Path": "modules/store_module/store_module.otmod",

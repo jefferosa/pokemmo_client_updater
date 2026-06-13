@@ -180,7 +180,6 @@ end
 
 function terminate()
   g_settings.setList('terminal-history', commandHistory)
-
   removeEvent(flushEvent)
 
   if poped then
@@ -197,7 +196,12 @@ function terminate()
   --g_keyboard.unbindKeyDown('Ctrl+T')
   g_logger.setOnLog(nil)
   terminalWindow:destroy()
-  terminalButton:destroy()
+
+ -- PROTEÇÃO AQUI: Só destrói se o botão existir
+  if terminalButton then
+    terminalButton:destroy()
+  end
+  
   commandEnv = nil
   _G.terminalLines = allLines
 end

@@ -1,4 +1,4 @@
-== application started at Jun 05 2026 19:50:59
+== application started at Jun 07 2026 13:31:07
 PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
 Loaded module 'corelib'
 Loaded module 'game_things'
@@ -27,7 +27,6 @@ Loaded module 'game_combatcontrols'
 Loaded module 'game_containers'
 Loaded module 'game_viplist'
 Loaded module 'game_battle'
-ERROR: Unable to load texture '/images/topbuttons/miniwindowicon/minimap': unable to open file '/images/topbuttons/miniwindowicon/minimap.png': O sistema não pode encontrar o caminho especificado.
 Loaded module 'game_minimap'
 Loaded module 'game_npctrade'
 Loaded module 'game_textwindow'
@@ -57,102 +56,7 @@ Loaded module 'store_module'
 TaskTracker: Iniciado e escutando a porta 101!
 Loaded module 'game_tasktracker'
 Exiting application..
-ERROR: Unable to unload module 'store_module': LUA ERROR:
-/gamelib/protocolgame.lua:43: Opcode is already taken.
-stack traceback:
-	[C]: at 0x0094d1d0
-	[C]: in function 'error'
-	/gamelib/protocolgame.lua:43: in function 'registerExtendedOpcode'
-	/store_module/store_module.lua:151: in function 'terminate'
-	/store_module/store_module.otmod:10:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'bossnpc': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_bossnpc/bossnpc.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'token': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_token/token.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'addonsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_addonsystem/addonsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'rc_sound': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/rc_sound/rcsound.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'evsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_evsystem/evsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'tmsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_tmsystem/tmsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'dungeonsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_dungeon/dungeonsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'NewPokemon': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_newpoke/newPokemon.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'computersystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_computersystem/computersystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'client_terminal': LUA ERROR:
-/client_terminal/terminal.lua:200: attempt to index upvalue 'terminalButton' (a nil value)
-stack traceback:
-	[C]: in function '__index'
-	/client_terminal/terminal.lua:200: in function 'terminate'
-	/client_terminal/terminal.otmod:9:[@onUnload]:1: in main chunk
-== application started at Jun 05 2026 20:35:36
+== application started at Jun 07 2026 13:33:05
 PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
 Loaded module 'corelib'
 Loaded module 'game_things'
@@ -181,7 +85,109 @@ Loaded module 'game_combatcontrols'
 Loaded module 'game_containers'
 Loaded module 'game_viplist'
 Loaded module 'game_battle'
-ERROR: Unable to load texture '/images/topbuttons/miniwindowicon/minimap': unable to open file '/images/topbuttons/miniwindowicon/minimap.png': O sistema não pode encontrar o caminho especificado.
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+ERROR: protected lua call failed: LUA ERROR:
+/game_pokemonmoves/pokemonmoves.lua:595: attempt to compare nil with number
+stack traceback:
+	[C]: in function '__lt'
+	/game_pokemonmoves/pokemonmoves.lua:595: in function 'getSpells'
+	/game_pokemonmoves/pokemonmoves.lua:518: in function 'callback'
+	/gamelib/protocolgame.lua:17: in function </gamelib/protocolgame.lua:14>
+ERROR: protected lua call failed: LUA ERROR:
+/game_pokemonmoves/pokemonmoves.lua:595: attempt to compare nil with number
+stack traceback:
+	[C]: in function '__lt'
+	/game_pokemonmoves/pokemonmoves.lua:595: in function 'getSpells'
+	/game_pokemonmoves/pokemonmoves.lua:518: in function 'callback'
+	/gamelib/protocolgame.lua:17: in function </gamelib/protocolgame.lua:14>
+ERROR: protected lua call failed: LUA ERROR:
+/game_pokemonmoves/pokemonmoves.lua:595: attempt to compare nil with number
+stack traceback:
+	[C]: in function '__lt'
+	/game_pokemonmoves/pokemonmoves.lua:595: in function 'getSpells'
+	/game_pokemonmoves/pokemonmoves.lua:518: in function 'callback'
+	/gamelib/protocolgame.lua:17: in function </gamelib/protocolgame.lua:14>
+ERROR: protected lua call failed: LUA ERROR:
+/game_pokemonmoves/pokemonmoves.lua:595: attempt to compare nil with number
+stack traceback:
+	[C]: in function '__lt'
+	/game_pokemonmoves/pokemonmoves.lua:595: in function 'getSpells'
+	/game_pokemonmoves/pokemonmoves.lua:518: in function 'callback'
+	/gamelib/protocolgame.lua:17: in function </gamelib/protocolgame.lua:14>
+ERROR: protected lua call failed: LUA ERROR:
+/game_pokemonmoves/pokemonmoves.lua:595: attempt to compare nil with number
+stack traceback:
+	[C]: in function '__lt'
+	/game_pokemonmoves/pokemonmoves.lua:595: in function 'getSpells'
+	/game_pokemonmoves/pokemonmoves.lua:518: in function 'callback'
+	/gamelib/protocolgame.lua:17: in function </gamelib/protocolgame.lua:14>
+ERROR: protected lua call failed: LUA ERROR:
+/game_pokemonmoves/pokemonmoves.lua:595: attempt to compare nil with number
+stack traceback:
+	[C]: in function '__lt'
+	/game_pokemonmoves/pokemonmoves.lua:595: in function 'getSpells'
+	/game_pokemonmoves/pokemonmoves.lua:518: in function 'callback'
+	/gamelib/protocolgame.lua:17: in function </gamelib/protocolgame.lua:14>
+Could not send statistics: Uma tentativa de conex�o falhou porque o componente conectado n�o respondeu
+corretamente ap�s um per�odo de tempo ou a conex�o estabelecida falhou
+porque o host conectado n�o respondeu
+Exiting application..
+== application started at Jun 07 2026 19:56:28
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
 Loaded module 'game_minimap'
 Loaded module 'game_npctrade'
 Loaded module 'game_textwindow'
@@ -211,102 +217,7 @@ Loaded module 'store_module'
 TaskTracker: Iniciado e escutando a porta 101!
 Loaded module 'game_tasktracker'
 Exiting application..
-ERROR: Unable to unload module 'store_module': LUA ERROR:
-/gamelib/protocolgame.lua:43: Opcode is already taken.
-stack traceback:
-	[C]: at 0x0094d1d0
-	[C]: in function 'error'
-	/gamelib/protocolgame.lua:43: in function 'registerExtendedOpcode'
-	/store_module/store_module.lua:151: in function 'terminate'
-	/store_module/store_module.otmod:10:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'bossnpc': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_bossnpc/bossnpc.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'token': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_token/token.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'addonsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_addonsystem/addonsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'rc_sound': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/rc_sound/rcsound.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'evsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_evsystem/evsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'tmsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_tmsystem/tmsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'dungeonsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_dungeon/dungeonsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'NewPokemon': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_newpoke/newPokemon.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'computersystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_computersystem/computersystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'client_terminal': LUA ERROR:
-/client_terminal/terminal.lua:200: attempt to index upvalue 'terminalButton' (a nil value)
-stack traceback:
-	[C]: in function '__index'
-	/client_terminal/terminal.lua:200: in function 'terminate'
-	/client_terminal/terminal.otmod:9:[@onUnload]:1: in main chunk
-== application started at Jun 05 2026 21:15:14
+== application started at Jun 07 2026 19:58:57
 PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
 Loaded module 'corelib'
 Loaded module 'game_things'
@@ -335,7 +246,6 @@ Loaded module 'game_combatcontrols'
 Loaded module 'game_containers'
 Loaded module 'game_viplist'
 Loaded module 'game_battle'
-ERROR: Unable to load texture '/images/topbuttons/miniwindowicon/minimap': unable to open file '/images/topbuttons/miniwindowicon/minimap.png': O sistema não pode encontrar o caminho especificado.
 Loaded module 'game_minimap'
 Loaded module 'game_npctrade'
 Loaded module 'game_textwindow'
@@ -365,102 +275,7 @@ Loaded module 'store_module'
 TaskTracker: Iniciado e escutando a porta 101!
 Loaded module 'game_tasktracker'
 Exiting application..
-ERROR: Unable to unload module 'store_module': LUA ERROR:
-/gamelib/protocolgame.lua:43: Opcode is already taken.
-stack traceback:
-	[C]: at 0x0094d1d0
-	[C]: in function 'error'
-	/gamelib/protocolgame.lua:43: in function 'registerExtendedOpcode'
-	/store_module/store_module.lua:151: in function 'terminate'
-	/store_module/store_module.otmod:10:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'bossnpc': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_bossnpc/bossnpc.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'token': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_token/token.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'addonsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_addonsystem/addonsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'rc_sound': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/rc_sound/rcsound.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'evsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_evsystem/evsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'tmsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_tmsystem/tmsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'dungeonsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_dungeon/dungeonsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'NewPokemon': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_newpoke/newPokemon.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'computersystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
-stack traceback:
-	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_computersystem/computersystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'client_terminal': LUA ERROR:
-/client_terminal/terminal.lua:200: attempt to index upvalue 'terminalButton' (a nil value)
-stack traceback:
-	[C]: in function '__index'
-	/client_terminal/terminal.lua:200: in function 'terminate'
-	/client_terminal/terminal.otmod:9:[@onUnload]:1: in main chunk
-== application started at Jun 05 2026 21:24:45
+== application started at Jun 07 2026 20:09:28
 PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
 Loaded module 'corelib'
 Loaded module 'game_things'
@@ -489,7 +304,6 @@ Loaded module 'game_combatcontrols'
 Loaded module 'game_containers'
 Loaded module 'game_viplist'
 Loaded module 'game_battle'
-ERROR: Unable to load texture '/images/topbuttons/miniwindowicon/minimap': unable to open file '/images/topbuttons/miniwindowicon/minimap.png': O sistema não pode encontrar o caminho especificado.
 Loaded module 'game_minimap'
 Loaded module 'game_npctrade'
 Loaded module 'game_textwindow'
@@ -519,98 +333,3079 @@ Loaded module 'store_module'
 TaskTracker: Iniciado e escutando a porta 101!
 Loaded module 'game_tasktracker'
 Exiting application..
-ERROR: Unable to unload module 'store_module': LUA ERROR:
-/gamelib/protocolgame.lua:43: Opcode is already taken.
-stack traceback:
-	[C]: at 0x0094d1d0
-	[C]: in function 'error'
-	/gamelib/protocolgame.lua:43: in function 'registerExtendedOpcode'
-	/store_module/store_module.lua:151: in function 'terminate'
-	/store_module/store_module.otmod:10:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'bossnpc': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
+== application started at Jun 07 2026 20:12:46
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 07 2026 20:24:42
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 07 2026 20:28:38
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:112: attempt to index local 'itemWidget' (a nil value)
 stack traceback:
 	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_bossnpc/bossnpc.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'token': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
+	/game_inventory/inventory.lua:112: in function 'onInventoryChange'
+	/game_inventory/inventory.lua:76: in function 'refresh'
+	/game_inventory/inventory.lua:27: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:112: attempt to index local 'itemWidget' (a nil value)
 stack traceback:
 	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_token/token.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'addonsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
+	/game_inventory/inventory.lua:112: in function 'onInventoryChange'
+	/game_inventory/inventory.lua:74: in function </game_inventory/inventory.lua:70>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:109: attempt to index local 'itemWidget' (a nil value)
 stack traceback:
 	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_addonsystem/addonsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'rc_sound': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
+	/game_inventory/inventory.lua:109: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:109: attempt to index local 'itemWidget' (a nil value)
 stack traceback:
 	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/rc_sound/rcsound.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'evsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
+	/game_inventory/inventory.lua:109: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:109: attempt to index local 'itemWidget' (a nil value)
 stack traceback:
 	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_evsystem/evsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'tmsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
+	/game_inventory/inventory.lua:109: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:109: attempt to index local 'itemWidget' (a nil value)
 stack traceback:
 	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_tmsystem/tmsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'dungeonsystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
+	/game_inventory/inventory.lua:109: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:109: attempt to index local 'itemWidget' (a nil value)
 stack traceback:
 	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_dungeon/dungeonsystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'NewPokemon': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
+	/game_inventory/inventory.lua:109: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:109: attempt to index local 'itemWidget' (a nil value)
 stack traceback:
 	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_newpoke/newPokemon.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'computersystem': LUA ERROR:
-/rc_sound/rcsound.lua:157: attempt to index a nil value
+	/game_inventory/inventory.lua:109: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:109: attempt to index local 'itemWidget' (a nil value)
 stack traceback:
 	[C]: in function '__index'
-	/rc_sound/rcsound.lua:157: in function 'setLabel'
-	/rc_sound/rcsound.lua:151: in function 'stopSound'
-	/rc_sound/rcsound.lua:82: in function 'onGameEnd'
-	/rc_sound/rcsound.lua:71: in function 'terminate'
-	/game_computersystem/computersystem.otmod:13:[@onUnload]:1: in main chunk
-ERROR: Unable to unload module 'client_terminal': LUA ERROR:
-/client_terminal/terminal.lua:200: attempt to index upvalue 'terminalButton' (a nil value)
+	/game_inventory/inventory.lua:109: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:109: attempt to index local 'itemWidget' (a nil value)
 stack traceback:
 	[C]: in function '__index'
-	/client_terminal/terminal.lua:200: in function 'terminate'
-	/client_terminal/terminal.otmod:9:[@onUnload]:1: in main chunk
+	/game_inventory/inventory.lua:109: in function </game_inventory/inventory.lua:97>
+ERROR: /game_inventory/inventory.otui:32: [@onClose]:2: attempt to index field 'game_inventory' (a nil value)
+ERROR: /game_inventory/inventory.otui:32: [@onClose]:2: attempt to index field 'game_inventory' (a nil value)
+Exiting application..
+== application started at Jun 07 2026 20:32:21
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: failed to load UI from 'inventory.otui': OTML error in '/game_inventory/inventory.otui' at line 35: must indent every 2 spaces
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:23: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:23: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function 'onInventoryChange'
+	/game_inventory/inventory.lua:74: in function </game_inventory/inventory.lua:70>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+Exiting application..
+== application started at Jun 07 2026 20:32:50
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: failed to load UI from 'inventory.otui': OTML error in '/game_inventory/inventory.otui' at line 35: must indent every 2 spaces
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:23: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:23: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function 'onInventoryChange'
+	/game_inventory/inventory.lua:74: in function </game_inventory/inventory.lua:70>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:107: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:107: in function </game_inventory/inventory.lua:97>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:89: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:89: in function 'callback'
+	/client_topmenu/topmenu.lua:31: in function </client_topmenu/topmenu.lua:29>
+Exiting application..
+== application started at Jun 07 2026 22:19:53
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: failed to load UI from 'inventory.otui': OTML error in '/game_inventory/inventory.otui' at line 35: must indent every 2 spaces
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:17: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:17: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 19:10:14
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: failed to load UI from 'inventory.otui': OTML error in '/game_inventory/inventory.otui' at line 35: must indent every 2 spaces
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:17: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:17: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 19:16:30
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/bike.png': unable to open file '/modules/game_healthinfo/interface/bike.png': O sistema não pode encontrar o caminho especificado.
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 19:25:14
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: failed to load UI from 'inventory.otui': OTML error in '/game_inventory/inventory.otui' at line 36: invalid indentation depth, are you indenting correctly?
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:25: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:25: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 19:25:51
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: failed to load UI from 'inventory.otui': cannot have multiple main widgets in otui files
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:25: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:25: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 19:27:38
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 19:31:43
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: failed to apply style to widget 'contentsPanel': OTML error in '/game_inventory/inventory.otui:47': failed to cast node value '3 // FORÇA 3 COLUNAS' to type 'int'
+stack traceback:
+	[C]: in function 'loadUI'
+	/game_inventory/inventory.lua:17: in function </game_inventory/inventory.lua:16>
+	[C]: in function 'pcall'
+	/game_inventory/inventory.lua:16: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+at:
+	[C++]: ?applyStyle@UIWidget@@QAEXABV?$shared_object_ptr@VOTMLNode@@@stdext@@@Z
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 19:34:41
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 19:36:56
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 19:38:48
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: /game_inventory/inventory.lua:85: attempt to index global 'inventoryButton' (a nil value)
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 19:40:55
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:01:15
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:02:44
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:03:59
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:05:06
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:54: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:54: in function 'toggleAdventurerStyle'
+	/game_inventory/inventory.lua:69: in function 'refresh'
+	/game_inventory/inventory.lua:40: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+ERROR: protected lua call failed: LUA ERROR:
+/game_inventory/inventory.lua:54: attempt to index global 'inventoryPanel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:54: in function 'toggleAdventurerStyle'
+	/game_inventory/inventory.lua:69: in function </game_inventory/inventory.lua:61>
+ERROR: /game_inventory/inventory.otui:7: [@onClose]:2: attempt to index field 'game_inventory' (a nil value)
+Exiting application..
+== application started at Jun 08 2026 20:06:26
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:07:35
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:07:53
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:08:53
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:12:03
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/rod.png': unable to open file '/modules/game_healthinfo/interface/rod.png': O sistema não pode encontrar o caminho especificado.
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/bike.png': unable to open file '/modules/game_healthinfo/interface/bike.png': O sistema não pode encontrar o caminho especificado.
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/bag.png': unable to open file '/modules/game_healthinfo/interface/bag.png': O sistema não pode encontrar o caminho especificado.
+ERROR: failed to create widget from style 'InventoryItem': 'InventoryItem' is not a defined style
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:69: attempt to index local 'slot' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:69: in function 'createInventoryButtons'
+	/game_inventory/inventory.lua:40: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+ERROR: /game_inventory/inventory.otui:7: [@onClose]:2: attempt to index field 'game_inventory' (a nil value)
+Exiting application..
+== application started at Jun 08 2026 20:16:02
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/bike.png': unable to open file '/modules/game_healthinfo/interface/bike.png': O sistema não pode encontrar o caminho especificado.
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/pokebag.png': unable to open file '/modules/game_healthinfo/interface/pokebag.png': O sistema não pode encontrar o caminho especificado.
+ERROR: unable to retrieve style 'OrderSlot': not a defined style
+stack traceback:
+	[C]: in function 'setStyle'
+	/game_inventory/inventory.lua:136: in function 'onInventoryChange'
+	/game_inventory/inventory.lua:103: in function 'refresh'
+	/game_inventory/inventory.lua:41: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+at:
+	[C++]: ?setStyle@UIWidget@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+ERROR: unable to retrieve style 'OrderSlot': not a defined style
+stack traceback:
+	[C]: in function 'setStyle'
+	/game_inventory/inventory.lua:136: in function 'onInventoryChange'
+	/game_inventory/inventory.lua:101: in function </game_inventory/inventory.lua:97>
+at:
+	[C++]: ?setStyle@UIWidget@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+Exiting application..
+== application started at Jun 08 2026 20:20:22
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/bike.png': unable to open file '/modules/game_healthinfo/interface/bike.png': O sistema não pode encontrar o caminho especificado.
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/pokebag.png': unable to open file '/modules/game_healthinfo/interface/pokebag.png': O sistema não pode encontrar o caminho especificado.
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:22:13
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/bike.png': unable to open file '/modules/game_healthinfo/interface/bike.png': O sistema não pode encontrar o caminho especificado.
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/pokebag.png': unable to open file '/modules/game_healthinfo/interface/pokebag.png': O sistema não pode encontrar o caminho especificado.
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:23:19
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/bike.png': unable to open file '/modules/game_healthinfo/interface/bike.png': O sistema não pode encontrar o caminho especificado.
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/pokebag.png': unable to open file '/modules/game_healthinfo/interface/pokebag.png': O sistema não pode encontrar o caminho especificado.
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:27:24
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:27: attempt to index global 'UILayouter' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:27: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:30:18
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/bike.png': unable to open file '/modules/game_healthinfo/interface/bike.png': O sistema não pode encontrar o caminho especificado.
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/pokebag.png': unable to open file '/modules/game_healthinfo/interface/pokebag.png': O sistema não pode encontrar o caminho especificado.
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:19: attempt to call global 'refresh' (a nil value)
+stack traceback:
+	[C]: in function 'refresh'
+	/game_inventory/inventory.lua:19: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:37:38
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load module 'game_inventory': LUA ERROR: /game_inventory/inventory.lua:3: '}' expected (to close '{' at line 1) near 'inventoryPanel'
+stack traceback:
+	[builtin#141]: at 0x00d8d300
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:40:24
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/bike.png': unable to open file '/modules/game_healthinfo/interface/bike.png': O sistema não pode encontrar o caminho especificado.
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/pokebag.png': unable to open file '/modules/game_healthinfo/interface/pokebag.png': O sistema não pode encontrar o caminho especificado.
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 20:41:37
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: failed to load UI from 'inventory.otui': '# Forçamos o layout aqui.' is not a defined style
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:7: attempt to index global 'inventoryWindow' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:7: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 08 2026 21:26:59
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:35: attempt to index global 'panel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:35: in function 'createExtraButtons'
+	/game_inventory/inventory.lua:18: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 13 2026 15:19:15
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load module 'game_inventory': LUA ERROR:
+/game_inventory/inventory.lua:35: attempt to index global 'panel' (a nil value)
+stack traceback:
+	[C]: in function '__index'
+	/game_inventory/inventory.lua:35: in function 'createExtraButtons'
+	/game_inventory/inventory.lua:18: in function 'init'
+	/game_inventory/inventory.otmod:9:[@onLoad]:1: in main chunk
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 13 2026 15:22:42
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load module 'game_inventory': LUA ERROR: /game_inventory/inventory.lua:2: '=' expected near 'inventoryWindow'
+stack traceback:
+	[builtin#141]: at 0x008fd300
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 13 2026 15:24:32
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load module 'game_inventory': LUA ERROR: /game_inventory/inventory.lua:2: '=' expected near 'inventoryWindow'
+stack traceback:
+	[builtin#141]: at 0x008fd300
+	[C]: in function 'autoLoadModules'
+	/init.lua:49: in main chunk
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 13 2026 15:26:14
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/bike.png': unable to open file '/modules/game_healthinfo/interface/bike.png': O sistema não pode encontrar o caminho especificado.
+ERROR: Unable to load texture '/modules/game_healthinfo/interface/pokebag.png': unable to open file '/modules/game_healthinfo/interface/pokebag.png': O sistema não pode encontrar o caminho especificado.
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 13 2026 15:29:07
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 13 2026 15:30:37
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 13 2026 15:39:08
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+Exiting application..
+== application started at Jun 13 2026 15:41:20
+PokeMMO 0.6.3 rev 0 (devel) built on Jun  5 2026 for arch x86
+Loaded module 'corelib'
+Loaded module 'game_things'
+Loaded module 'gamelib'
+Loaded module 'client'
+Loaded module 'client_styles'
+Locale 'pl' is missing 1 translations.
+["Total Price:"] = "",
+Using configured locale: en
+Loaded module 'client_locales'
+Loaded module 'client_topmenu'
+Loaded module 'client_background'
+Loaded module 'client_options'
+Loaded module 'client_entergame'
+Loaded module 'client_serverlist'
+Loaded module 'client_stats'
+Loaded module 'game_interface'
+Loaded module 'client_terminal'
+Loaded module 'game_hotkeys'
+Loaded module 'game_questlog'
+Loaded module 'game_textmessage'
+Loaded module 'game_console'
+Loaded module 'game_outfit'
+Loaded module 'game_healthinfo'
+Loaded module 'game_combatcontrols'
+Loaded module 'game_containers'
+Loaded module 'game_viplist'
+Loaded module 'game_battle'
+Loaded module 'game_minimap'
+Loaded module 'game_npctrade'
+Loaded module 'game_textwindow'
+Loaded module 'game_playertrade'
+Loaded module 'game_bugreport'
+Loaded module 'game_playerdeath'
+Loaded module 'game_playermount'
+Loaded module 'game_ruleviolation'
+Loaded module 'game_market'
+Loaded module 'game_modaldialog'
+Loaded module 'game_npcdialog'
+Loaded module 'computersystem'
+Loaded module 'NewPokemon'
+Loaded module 'game_tutorial'
+Loaded module 'dungeonsystem'
+Loaded module 'tmsystem'
+Loaded module 'evsystem'
+Loaded module 'rc_sound'
+Loaded module 'ControlShaders'
+Loaded module 'addonsystem'
+Loaded module 'token'
+Loaded module 'bossnpc'
+Loaded module 'game_inventory'
+Loaded module 'game_pokemonbar'
+Loaded module 'game_pokemonmoves'
+Loaded module 'pokepark'
+Loaded module 'store_module'
+TaskTracker: Iniciado e escutando a porta 101!
+Loaded module 'game_tasktracker'
+ERROR: protected lua call failed: LUA ERROR:
+/game_pokemonmoves/pokemonmoves.lua:595: attempt to compare nil with number
+stack traceback:
+	[C]: in function '__lt'
+	/game_pokemonmoves/pokemonmoves.lua:595: in function 'getSpells'
+	/game_pokemonmoves/pokemonmoves.lua:518: in function 'callback'
+	/gamelib/protocolgame.lua:17: in function </gamelib/protocolgame.lua:14>
+Exiting application..

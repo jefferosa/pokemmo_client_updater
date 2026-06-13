@@ -66,11 +66,17 @@ function init()
 end
 
 function terminate()
-	disconnect(g_game, { onGameStart = onGameStart,
-                       onGameEnd = onGameEnd })
-	onGameEnd()
-	soundWindow:destroy()
-	-- soundButton:destroy()
+    disconnect(g_game, { onGameStart = onGameStart,
+                        onGameEnd = onGameEnd })
+    
+    -- Paramos o som explicitamente e destruímos a janela
+    rcSoundChannel:stop()
+    if soundWindow then
+        soundWindow:destroy()
+        soundWindow = nil
+    end
+    
+    removeEvent(toggleSoundEvent)
 end
 
 function onGameStart()
@@ -154,5 +160,11 @@ function stopSound()
 end
 
 function setLabel(str)
-	soundWindow:recursiveGetChildById('currentSound'):getChildById('value'):setText(str)
+    -- Adicionamos uma checagem para ver se a janela ainda existe antes de tentar mudar o texto
+    if soundWindow and soundWindow:recursiveGetChildById('currentSound') then
+        local label = soundWindow:recursiveGetChildById('currentSound'):getChildById('value')
+        if label then
+            label:setText(str)
+        end
+    end
 end

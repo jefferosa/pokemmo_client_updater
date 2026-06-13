@@ -9,7 +9,11 @@ local enterGameButton
 local clientBox
 local protocolLogin
 local motdEnabled = false
+
+-- SEU IP E VERSÃO AQUI
 local serverIp = 'pokemmo.zapto.org'
+local serverPort = 7171
+local serverProtocol = 1098
 
 -- private functions
 local function onError(protocol, message, errorCode)
@@ -39,33 +43,35 @@ local function onSessionKey(protocol, sessionKey)
 end
 
 local function onCharacterList(protocol, characters, account, otui)
-  -- Try add server to the server list
   ServerList.add(G.host, G.port, g_game.getClientVersion())
 
-  -- Save 'Stay logged in' setting
-  g_settings.set('staylogged', enterGame:getChildById('stayLoggedBox'):isChecked())
+  -- Save 'Stay logged in' setting (se existir)
+  local stayLoggedBox = enterGame:getChildById('stayLoggedBox')
+  if stayLoggedBox then
+      g_settings.set('staylogged', stayLoggedBox:isChecked())
+  end
 
   if enterGame:getChildById('rememberPasswordBox'):isChecked() then
-    local account = g_crypt.encrypt(G.account)
-    local password = g_crypt.encrypt(G.password)
+    local encAccount = g_crypt.encrypt(G.account)
+    local encPassword = g_crypt.encrypt(G.password)
 
-    g_settings.set('account', account)
-    g_settings.set('password', password)
+    g_settings.set('account', encAccount)
+    g_settings.set('password', encPassword)
 
-    ServerList.setServerAccount(G.host, account)
-    ServerList.setServerPassword(G.host, password)
+    ServerList.setServerAccount(G.host, encAccount)
+    ServerList.setServerPassword(G.host, encPassword)
 
     g_settings.set('autologin', enterGame:getChildById('autoLoginBox'):isChecked())
   else
-    -- reset server list account/password
     ServerList.setServerAccount(G.host, '')
     ServerList.setServerPassword(G.host, '')
-
     EnterGame.clearAccountFields()
   end
 
-  loadBox:destroy()
-  loadBox = nil
+  if loadBox then
+      loadBox:destroy()
+      loadBox = nil
+  end
 
   for _, characterInfo in pairs(characters) do
     if characterInfo.previewState and characterInfo.previewState ~= PreviewState.Default then
@@ -88,8 +94,10 @@ local function onCharacterList(protocol, characters, account, otui)
 end
 
 local function onUpdateNeeded(protocol, signature)
-  loadBox:destroy()
-  loadBox = nil
+  if loadBox then
+      loadBox:destroy()
+      loadBox = nil
+  end
 
   if EnterGame.updateFunc then
     local continueFunc = EnterGame.show
@@ -109,10 +117,6 @@ function EnterGame.init()
   motdButton:hide()
   g_keyboard.bindKeyDown('Ctrl+G', EnterGame.openWindow)
 
-  -- if motdEnabled and G.motdNumber then
-    -- motdButton:show()
-  -- end
-
   local account = g_settings.get('account')
   local password = g_settings.get('password')
   local host = g_settings.get('host')
@@ -120,9 +124,10 @@ function EnterGame.init()
   local stayLogged = g_settings.getBoolean('staylogged')
   local autologin = g_settings.getBoolean('autologin')
   local clientVersion = g_settings.getInteger('client-version')
-  if clientVersion == 0 then clientVersion = 1074 end
-
-  if port == nil or port == 0 then port = 7171 end
+  
+  if clientVersion == 0 then clientVersion = serverProtocol end
+  if port == nil or port == 0 then port = serverPort end
+  if host == nil or host == "" then host = serverIp end
 
   EnterGame.setAccountName(account)
   EnterGame.setPassword(password)
@@ -130,7 +135,9 @@ function EnterGame.init()
   enterGame:getChildById('serverHostTextEdit'):setText(host)
   enterGame:getChildById('serverPortTextEdit'):setText(port)
   enterGame:getChildById('autoLoginBox'):setChecked(autologin)
-  enterGame:getChildById('stayLoggedBox'):setChecked(stayLogged)
+  
+  local stayBox = enterGame:getChildById('stayLoggedBox')
+  if stayBox then stayBox:setChecked(stayLogged) end
 
   clientBox = enterGame:getChildById('clientComboBox')
   for _, proto in pairs(g_game.getSupportedClients()) do
@@ -138,8 +145,6 @@ function EnterGame.init()
   end
   clientBox:setCurrentOption(clientVersion)
 
-  EnterGame.toggleAuthenticatorToken(clientVersion, true)
-  EnterGame.toggleStayLoggedBox(clientVersion, true)
   connect(clientBox, { onOptionChange = EnterGame.onClientVersionChange })
 
   enterGame:hide()
@@ -147,7 +152,9 @@ function EnterGame.init()
   if g_app.isRunning() and not g_game.isOnline() then
     enterGame:show()
   end
-  EnterGame.setUniqueServer(serverIp, 7171, 1098)
+  
+  -- Preenche os campos ocultos do OTUI com o IP real sem quebrar o layout
+  EnterGame.setUniqueServer(serverIp, serverPort, serverProtocol)
 end
 
 function EnterGame.firstShow()
@@ -157,6 +164,7 @@ function EnterGame.firstShow()
   local password = g_crypt.decrypt(g_settings.get('password'))
   local host = g_settings.get('host')
   local autologin = g_settings.getBoolean('autologin')
+  
   if #host > 0 and #password > 0 and #account > 0 and autologin then
     addEvent(function()
       if not g_settings.getBoolean('autologin') then return end
@@ -212,96 +220,48 @@ function EnterGame.openWindow()
 end
 
 function EnterGame.setAccountName(account)
-  local account = g_crypt.decrypt(account)
-  enterGame:getChildById('accountNameTextEdit'):setText(account)
-  enterGame:getChildById('accountNameTextEdit'):setCursorPos(-1)
-  enterGame:getChildById('rememberPasswordBox'):setChecked(#account > 0)
+  local decAccount = g_crypt.decrypt(account)
+  local textEdit = enterGame:getChildById('accountNameTextEdit')
+  textEdit:setText(decAccount)
+  textEdit:setCursorPos(-1)
+  enterGame:getChildById('rememberPasswordBox'):setChecked(#decAccount > 0)
 end
 
 function EnterGame.setPassword(password)
-  local password = g_crypt.decrypt(password)
-  enterGame:getChildById('accountPasswordTextEdit'):setText(password)
+  local decPassword = g_crypt.decrypt(password)
+  enterGame:getChildById('accountPasswordTextEdit'):setText(decPassword)
 end
 
 function EnterGame.clearAccountFields()
   enterGame:getChildById('accountNameTextEdit'):clearText()
   enterGame:getChildById('accountPasswordTextEdit'):clearText()
-  enterGame:getChildById('authenticatorTokenTextEdit'):clearText()
+  
+  local tokenEdit = enterGame:getChildById('authenticatorTokenTextEdit')
+  if tokenEdit then tokenEdit:clearText() end
+  
   enterGame:getChildById('accountNameTextEdit'):focus()
   g_settings.remove('account')
   g_settings.remove('password')
 end
 
-function EnterGame.toggleAuthenticatorToken(clientVersion, init)
-  local enabled = (clientVersion >= 1072)
-  if enabled == enterGame.authenticatorEnabled then
-    return
-  end
-
-  enterGame:getChildById('authenticatorTokenLabel'):setOn(enabled)
-  enterGame:getChildById('authenticatorTokenTextEdit'):setOn(enabled)
-
-  local newHeight = enterGame:getHeight()
-  local newY = enterGame:getY()
-  if enabled then
-    newY = newY - enterGame.authenticatorHeight
-    newHeight = newHeight + enterGame.authenticatorHeight
-  else
-    newY = newY + enterGame.authenticatorHeight
-    newHeight = newHeight - enterGame.authenticatorHeight
-  end
-
-  if not init then
-    enterGame:breakAnchors()
-    enterGame:setY(newY)
-    enterGame:bindRectToParent()
-  end
-  enterGame:setHeight(newHeight)
-
-  enterGame.authenticatorEnabled = enabled
-end
-
-function EnterGame.toggleStayLoggedBox(clientVersion, init)
-  local enabled = (clientVersion >= 1074)
-  if enabled == enterGame.stayLoggedBoxEnabled then
-    return
-  end
-
-  enterGame:getChildById('stayLoggedBox'):setOn(enabled)
-
-  local newHeight = enterGame:getHeight()
-  local newY = enterGame:getY()
-  if enabled then
-    newY = newY - enterGame.stayLoggedBoxHeight
-    newHeight = newHeight + enterGame.stayLoggedBoxHeight
-  else
-    newY = newY + enterGame.stayLoggedBoxHeight
-    newHeight = newHeight - enterGame.stayLoggedBoxHeight
-  end
-
-  if not init then
-    enterGame:breakAnchors()
-    enterGame:setY(newY)
-    enterGame:bindRectToParent()
-  end
-  enterGame:setHeight(newHeight)
-
-  enterGame.stayLoggedBoxEnabled = enabled
-end
-
 function EnterGame.onClientVersionChange(comboBox, text, data)
   local clientVersion = tonumber(text)
-  EnterGame.toggleAuthenticatorToken(clientVersion)
-  EnterGame.toggleStayLoggedBox(clientVersion)
+  -- Mantido apenas para compatibilidade de eventos caso existam
 end
 
 function EnterGame.doLogin()
   G.account = enterGame:getChildById('accountNameTextEdit'):getText()
   G.password = enterGame:getChildById('accountPasswordTextEdit'):getText()
-  G.authenticatorToken = enterGame:getChildById('authenticatorTokenTextEdit'):getText()
-  G.stayLogged = enterGame:getChildById('stayLoggedBox'):isChecked()
+  
+  local tokenEdit = enterGame:getChildById('authenticatorTokenTextEdit')
+  G.authenticatorToken = tokenEdit and tokenEdit:getText() or ""
+  
+  local stayBox = enterGame:getChildById('stayLoggedBox')
+  G.stayLogged = stayBox and stayBox:isChecked() or false
+  
   G.host = enterGame:getChildById('serverHostTextEdit'):getText()
   G.port = tonumber(enterGame:getChildById('serverPortTextEdit'):getText())
+  
   local clientVersion = tonumber(clientBox:getText())
   EnterGame.hide()
 
@@ -336,8 +296,10 @@ function EnterGame.doLogin()
   if modules.game_things.isLoaded() then
     protocolLogin:login(G.host, G.port, G.account, G.password, G.authenticatorToken, G.stayLogged)
   else
-    loadBox:destroy()
-    loadBox = nil
+    if loadBox then
+        loadBox:destroy()
+        loadBox = nil
+    end
     EnterGame.show()
   end
 end
@@ -352,7 +314,6 @@ end
 function EnterGame.setDefaultServer(host, port, protocol)
   local hostTextEdit = enterGame:getChildById('serverHostTextEdit')
   local portTextEdit = enterGame:getChildById('serverPortTextEdit')
-  local clientLabel = enterGame:getChildById('clientLabel')
   local accountTextEdit = enterGame:getChildById('accountNameTextEdit')
   local passwordTextEdit = enterGame:getChildById('accountPasswordTextEdit')
   local authenticatorTokenTextEdit = enterGame:getChildById('authenticatorTokenTextEdit')
@@ -363,64 +324,27 @@ function EnterGame.setDefaultServer(host, port, protocol)
     clientBox:setCurrentOption(protocol)
     accountTextEdit:setText('')
     passwordTextEdit:setText('')
-    authenticatorTokenTextEdit:setText('')
+    if authenticatorTokenTextEdit then authenticatorTokenTextEdit:setText('') end
   end
 end
 
-function EnterGame.setUniqueServer(host, port, protocol, windowWidth, windowHeight)
+function EnterGame.setUniqueServer(host, port, protocol)
+  -- Apenas injeta os valores técnicos ocultos. O OTUI cuida de esconder.
   local hostTextEdit = enterGame:getChildById('serverHostTextEdit')
-  hostTextEdit:setText(host)
-  hostTextEdit:setVisible(false)
-  hostTextEdit:setHeight(0)
+  if hostTextEdit then hostTextEdit:setText(host) end
+  
   local portTextEdit = enterGame:getChildById('serverPortTextEdit')
-  portTextEdit:setText(port)
-  portTextEdit:setVisible(false)
-  portTextEdit:setHeight(0)
+  if portTextEdit then portTextEdit:setText(port) end
 
-  local authenticatorTokenTextEdit = enterGame:getChildById('authenticatorTokenTextEdit')
-  authenticatorTokenTextEdit:setText('')
-  authenticatorTokenTextEdit:setOn(false)
-  local authenticatorTokenLabel = enterGame:getChildById('authenticatorTokenLabel')
-  authenticatorTokenLabel:setOn(false)
-
-  local stayLoggedBox = enterGame:getChildById('stayLoggedBox')
-  stayLoggedBox:setChecked(false)
-  stayLoggedBox:setOn(false)
-
-  clientBox:setCurrentOption(protocol)
-  clientBox:setVisible(false)
-  clientBox:setHeight(0)
-
-  local serverLabel = enterGame:getChildById('serverLabel')
-  serverLabel:setVisible(false)
-  serverLabel:setHeight(0)
-  local portLabel = enterGame:getChildById('portLabel')
-  portLabel:setVisible(false)
-  portLabel:setHeight(0)
-  local clientLabel = enterGame:getChildById('clientLabel')
-  clientLabel:setVisible(false)
-  clientLabel:setHeight(0)
-
-  local serverListButton = enterGame:getChildById('serverListButton')
-  serverListButton:setVisible(false)
-  serverListButton:setHeight(0)
-  serverListButton:setWidth(0)
-
-  local rememberPasswordBox = enterGame:getChildById('rememberPasswordBox')
-  rememberPasswordBox:setMarginTop(-8)
-
-  if not windowWidth then windowWidth = 236 end
-  enterGame:setWidth(windowWidth)
-  if not windowHeight then windowHeight = 210 end
-  enterGame:setHeight(windowHeight)
+  if clientBox then clientBox:setCurrentOption(protocol) end
 end
 
 function EnterGame.setServerInfo(message)
   local label = enterGame:getChildById('serverInfoLabel')
-  label:setText(message)
+  if label then label:setText(message) end
 end
 
 function EnterGame.disableMotd()
   motdEnabled = false
-  motdButton:hide()
+  if motdButton then motdButton:hide() end
 end

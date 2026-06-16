@@ -1,5 +1,5 @@
 {
-  "Version": "1.0.1",
+  "Version": "1.0.2",
   "Files": [
     {
       "Path": "glew32.dll",
@@ -43,8 +43,8 @@
     },
     {
       "Path": "manifest.json",
-      "Hash": "AAA7F55A0FFC61A8D0C319E0C0C9549DAB300E6A8D5558D93F47DBB9EA5D99FB",
-      "Size": 439460
+      "Hash": "01A182CE8A4D2F90A512CE83629FAEBEFC235532C137B341CDACA4801E859F5F",
+      "Size": 439461
     },
     {
       "Path": "OpenAL32.dll",
@@ -63,8 +63,8 @@
     },
     {
       "Path": "pokemmo.log",
-      "Hash": "83EC16F10D614E6D23F0E08D2643C18E796F0BF962997CF31688E7E36450105C",
-      "Size": 124629
+      "Hash": "34E4EB681C23151990679BCB99BE4E9AE5145C3F68D6908D62E4E75D8EC7F8D8",
+      "Size": 161493
     },
     {
       "Path": "zlib.dll",
@@ -1278,8 +1278,8 @@
     },
     {
       "Path": "modules/game_pokemonmoves/pokemonmoves.lua",
-      "Hash": "9528B5332D4F3E487F92908B1E87785C925BF261D01977C56DCBAA0E491C6765",
-      "Size": 21450
+      "Hash": "4687ED47048F8E6F66FFEEE647A2061057BEE711CBDE8132D87B8C4FC5E2A5CD",
+      "Size": 23013
     },
     {
       "Path": "modules/game_pokemonmoves/pokemonmoves.otmod",

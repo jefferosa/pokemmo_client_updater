@@ -576,65 +576,105 @@ function createMenu()
 end
 
 function destroySpells()
-  for i = 1, spellsNumber do
-    if sbw:recursiveGetChildById('spell'..i) == nil then break end
-    sbw:recursiveGetChildById('spell'..i):destroy()
-    sbw:recursiveGetChildById('progress'..i):destroy()
-  end
+    -- Verificação de segurança para o sbw
+    if not sbw then return end
+
+    for i = 1, spellsNumber do
+        local spellWidget = sbw:recursiveGetChildById('spell'..i)
+        local progressWidget = sbw:recursiveGetChildById('progress'..i)
+        
+        -- Destrói apenas se o widget existir
+        if spellWidget then spellWidget:destroy() end
+        if progressWidget then progressWidget:destroy() end
+    end
 end
 
 function getSpells(table)
-  destroySpells()
-  spellBarWindow = sbw:recursiveGetChildById('mainWindow')
-  local player = g_game.getLocalPlayer()
-  local value = #table
-  local width = 38
-  local height = 38
-  if not player then return end
-  for i = 1, #table do
-    if (table[i].lvl > level) and hideLevel == true then
-      value = i - 1
-      break
+    destroySpells()
+    spellBarWindow = sbw:recursiveGetChildById('mainWindow')
+    local player = g_game.getLocalPlayer()
+    if not player then return end
+
+    -- Garantimos que 'level' esteja definido. Se não estiver global, pegue do player
+    local currentLevel = level or player:getLevel() 
+    
+    local value = #table
+    local width = 38
+    local height = 38
+    
+    for i = 1, #table do
+        -- Proteção: verifica se a spell tem os dados básicos antes de prosseguir
+        local spellData = table[i]
+        if not spellData then break end
+        
+        local spellLvl = spellData.lvl or 0
+        
+        if (spellLvl > currentLevel) and hideLevel == true then
+            value = i - 1
+            break
+        end
+        if i == #table then value = i end
+        
+        icon = g_ui.createWidget('SpellButton', spellBarWindow)
+        icon:setId('spell'..i)
+        
+        local move = spellData.words or "unknown"
+        -- Proteção: garante que teremos um nome e adiciona o .png
+        local iconName = spelltoicon[move:lower()] or "normal.png"
+        
+        -- Agora concatenamos corretamente
+        local pathOn = "moves_icon/" .. iconName
+        
+        icon:setImageSource(pathOn)
+        
+        icon:setVisible(true) 
+        icon.words = move
+        icon.lvl = spellLvl
+        
+        -- Proteção contra nil no cooldown
+        local exhaustion = spellData.exhaustion or 0
+        local cooldownRemaining = spellData.cooldownRemaining or 0
+        
+        icon.exhaustion = exhaustion
+        icon.exhaustionNeeded = exhaustion - cooldownRemaining
+        
+        icon:setTooltip("Move: " .. move .. "\nLevel: " .. spellLvl .. "\nCooldown: " .. (exhaustion/1000) .. "s")
+        
+        -- Configuração de posição (mantida igual)
+        if side == 'horizontal' then
+            icon:setMarginTop(5)
+            height = 43
+            width = (i) * 32.5 + 2*(i)
+            icon:setMarginLeft((i) * 32 + 2*(i) - 32)
+        else
+            icon:setMarginLeft(3)
+            icon:setMarginTop((i) * 32 + 2*(i) - 32)
+            width = 38
+            height = (i) * 32 + 2*(i)
+        end
+        
+        -- Progress bar: protegida
+        progress = g_ui.createWidget('SpellProgressSpell', spellBarWindow)
+        progress:setId('progress'..i)
+        progress:setVisible(true)
+        progress:setPercent(100)
+        progress:setMarginLeft(icon:getMarginLeft())
+        progress:setMarginTop(icon:getMarginTop())
+        
+        -- Lógica de nível: comparando com variável protegida
+        if currentLevel < spellLvl then 
+            progress:setText('Lv:\n' .. spellLvl) 
+            progress:setColor('red') 
+            progress:setPercent(0) 
+        end
+        
+        progress:setPhantom(true)
+        icon.onClick = function() useSpell(i) end
     end
-    if i == #table then value = i end
-    icon = g_ui.createWidget('SpellButton',spellBarWindow)
-    --icon:
-    icon:setId('spell'..i)
-	local move = table[i].words
-    local pathOn = "moves_icon/"..spelltoicon[move:lower()]..""
-	icon:setImageSource(pathOn)
-    icon:setVisible(true) 
-    icon.words = table[i].words
-    icon.lvl = table[i].lvl
-    icon.exhaustion = table[i].exhaustion
-    icon.exhaustionNeeded = icon.exhaustion - table[i].cooldownRemaining
-    icon:setTooltip("Move: "..table[i].words.."\nLevel: "..table[i].lvl.."\nCooldown: "..(table[i].exhaustion/1000).." segundos\nTipo: "..string.gsub(spelltoicon[move:lower()], ".png", ""):upper().." TYPE")
-    if side == 'horizontal' then
-      icon:setMarginTop(5)
-      height = 43
-      width = (i) * 32.5 + 2*(i)
-      icon:setMarginLeft((i) * 32 + 2*(i) - 32)
-    else
-      icon:setMarginLeft(3)
-      icon:setMarginTop((i) * 32 + 2*(i) - 32)
-      width = 38
-      height = (i) * 32 + 2*(i)
-    end
-    --progress:
-    progress = g_ui.createWidget('SpellProgressSpell',spellBarWindow)
-    progress:setId('progress'..i)
-    progress:setVisible(true)
-    progress:setPercent(100)
-    progress:setMarginLeft(icon:getMarginLeft())
-    progress:setMarginTop(icon:getMarginTop())
-    if level < icon.lvl then progress:setText('Lv:\n'..icon.lvl) progress:setColor('red') progress:setPercent(0) end
-    if progress:getPercent() == 100 then progress:setText('') elseif icon.lvl < level then progress:setText(progress:getPercent()) end
-    progress:setPhantom(true)
-    icon.onClick = function() useSpell(i) end
-  end
-  sbw:setHeight(height)
-  sbw:setWidth(width)  
-  spellBarWindow:setSize(sbw:getSize())
+    
+    sbw:setHeight(height)
+    sbw:setWidth(width)   
+    spellBarWindow:setSize(sbw:getSize())
 end
 
 function useSpell(i)
@@ -646,14 +686,28 @@ function useSpell(i)
 end
 
 function startDownDelay(i)
-  local spell = sbw:recursiveGetChildById('spell'..i)
-  if not spell then return end
-  local progress = sbw:recursiveGetChildById('progress'..i)
-  progress:setPercent(0)
-  progress:setText('0%')
-  progress:setColor('red')
-  spell.exhaustionNeeded = 0
-  scheduleEvent(function() spellTimeleft(i) end,100) 
+    local spell = sbw:recursiveGetChildById('spell'..i)
+    -- Verificação de segurança: se o spell não existe, não faz nada
+    if not spell then return end
+
+    local progress = sbw:recursiveGetChildById('progress'..i)
+    
+    -- Se o progress não foi encontrado, evitamos o crash aqui
+    if not progress then
+        print("Erro: Widget de progresso nao encontrado para o spell " .. i)
+        return 
+    end
+
+    progress:setPercent(0)
+    progress:setText('0%')
+    progress:setColor('red')
+    
+    spell.exhaustionNeeded = 0
+    
+    scheduleEvent(function() 
+        -- Passamos o ID 'i' para garantir que a função de tempo saiba qual spell atualizar
+        spellTimeleft(i) 
+    end, 100) 
 end
 
 function spellTimeleft(i)

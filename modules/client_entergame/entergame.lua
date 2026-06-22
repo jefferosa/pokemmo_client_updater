@@ -11,7 +11,7 @@ local protocolLogin
 local motdEnabled = false
 
 -- SEU IP E VERSÃO AQUI
-local serverIp = 'pokemmo.zapto.org'
+local serverIp = '26.173.122.75'
 local serverPort = 7171
 local serverProtocol = 1098
 

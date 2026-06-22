@@ -1,5 +1,5 @@
 {
-  "Version": "1.0.2",
+  "Version": "1.0.3",
   "Files": [
     {
       "Path": "glew32.dll",
@@ -43,7 +43,7 @@
     },
     {
       "Path": "manifest.json",
-      "Hash": "01A182CE8A4D2F90A512CE83629FAEBEFC235532C137B341CDACA4801E859F5F",
+      "Hash": "EC59D1E18C462B4EB6F7EFD95AF61520BD2BA2E55826913C7A37237D9A4FACD7",
       "Size": 439461
     },
     {
@@ -63,8 +63,8 @@
     },
     {
       "Path": "pokemmo.log",
-      "Hash": "34E4EB681C23151990679BCB99BE4E9AE5145C3F68D6908D62E4E75D8EC7F8D8",
-      "Size": 161493
+      "Hash": "CDB2A83000C0AAFB0C1ACC150386D98D71750263C79C05BC4C0C5E068D734ADE",
+      "Size": 174189
     },
     {
       "Path": "zlib.dll",
@@ -518,8 +518,8 @@
     },
     {
       "Path": "modules/client_entergame/entergame.lua",
-      "Hash": "6235407012D7CC5FBB5097402E358CA279BEAB44B7C8A2E69C03A71057A03771",
-      "Size": 10980
+      "Hash": "4690C8DFC14CA9AC09FEC724C1BB4694A2DBDFA2A1DBD864B96988DB01F05871",
+      "Size": 10976
     },
     {
       "Path": "modules/client_entergame/entergame.otmod",

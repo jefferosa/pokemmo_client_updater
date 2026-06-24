@@ -1,5 +1,5 @@
 {
-  "Version": "1.0.3",
+  "Version": "1.0.4",
   "Files": [
     {
       "Path": "glew32.dll",
@@ -43,7 +43,7 @@
     },
     {
       "Path": "manifest.json",
-      "Hash": "EC59D1E18C462B4EB6F7EFD95AF61520BD2BA2E55826913C7A37237D9A4FACD7",
+      "Hash": "B857D1F83FB68345EBA612B0728F9A9B63B0AC285CD8C3DCC9AFD71AA6C85530",
       "Size": 439461
     },
     {
@@ -63,8 +63,8 @@
     },
     {
       "Path": "pokemmo.log",
-      "Hash": "CDB2A83000C0AAFB0C1ACC150386D98D71750263C79C05BC4C0C5E068D734ADE",
-      "Size": 174189
+      "Hash": "97C6FE0F27EA2DA9CF430C109D54211109ED2D88FD86C0D22AC889ACA99BB99D",
+      "Size": 180525
     },
     {
       "Path": "zlib.dll",
@@ -2038,8 +2038,8 @@
     },
     {
       "Path": "data/things/1098/Tibia.dat",
-      "Hash": "C01D76F06B2251AB0E2EC8BAA6AF71271649DBDEEF0C2FC91BF9C4699F3B9FFB",
-      "Size": 3562685
+      "Hash": "FA9212C8BAA8A4B1EE6D6E5AC432D53D9CD27A47A2347D70FB1F885B9E837190",
+      "Size": 3561846
     },
     {
       "Path": "data/things/1098/Tibia.otfi",
@@ -2048,8 +2048,8 @@
     },
     {
       "Path": "data/things/1098/Tibia.spr",
-      "Hash": "BCFFAA2CB51BAB7CA838830295F28D70702C967332E17F8AE13E495DDC4ABC52",
-      "Size": 573330129
+      "Hash": "A4CDAAC59E9D36937C9408CD7908C48B5BA62C2B2B5D50A340BC22F0598A883B",
+      "Size": 573696585
     },
     {
       "Path": "modules/corelib/ui/effects.lua",
